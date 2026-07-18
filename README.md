@@ -44,6 +44,9 @@ The projects is being developed incrementally using Agile Sprints to simulate a 
 
 - Python
 - psutil
+- platform
+- socket
+- subprocess
 
 ---
 
