@@ -28,6 +28,16 @@ The projects is being developed incrementally using Agile Sprints to simulate a 
 - Improved Console Output
 - Version Information Display
 
+### Sprint 3
+
+- Linux Server Monitoring
+- SSH Service Status
+- Apache Service Status
+- Nginx Service Status
+- MYSQL Service Status
+- PostgreSQL Service Status
+- Service Status Mapping (Running / Stopped / Failed / Not Installed)
+
 ---
 
 ## 🛠️ Technologies
@@ -63,19 +73,22 @@ Infrastructure_Health-Checker/
 
 ![Sprint 2 Output](screenshots/Sprint_2.png)
 
+### Sprint 3
+
+![Sprint 3 Output](screenshots/Sprint_3.png)
+
 ---
 
 ## 📌 Roadmap 
 
-### Sprint 3
+### Sprint 4
 
-- SSH Service Monitoring 
-- Apache Service Monitoring
-- Nginx Service Monitoring
+- Docker Engine Detection 
+- Running Containers Count
+- Stopped Containers Count
 
 ### Future 
 
-- Docker Monitoring
 - Open Port Detection
 - JSON Reports
 - HTML Dashboard
@@ -87,4 +100,4 @@ Infrastructure_Health-Checker/
 
 ## 📊 Current Version
 
-**v0.2.0**
+**v0.3.0**

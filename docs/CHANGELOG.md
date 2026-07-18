@@ -26,3 +26,19 @@ All notable changes to this project will be documented in this file.
 - Cleaner console output
 - Added applications version display
 - Better metric formatting
+
+## v0.3.0
+
+### Added
+
+- Linux service monitoring
+- SSH service status
+- Apache service status
+- Nginx service status
+- MySQL service status
+- PostgreSQL service status
+
+### Improved
+
+- Added service status mapping for readable output
+- Enhanced infrastructure monitoring capabilities

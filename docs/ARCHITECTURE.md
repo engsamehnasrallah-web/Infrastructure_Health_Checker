@@ -23,6 +23,7 @@ Responsible for:
 - Hostname detection
 - Local IP detection
 - Internet connectivity check
+- Linux service monitoring
 ---
 
 Future Architecture
@@ -41,3 +42,12 @@ the architecture will envolve as new monitoring modules are introduced.
 ### Next Refactoring Goal
 
 As the project grows, monitoring responsibilities will be separated into dedicated collector modules to improve maintainability.
+
+### Planned Refactoring
+
+Upcoming versions will separate infrastructure collectors into dedicated modules:
+
+- Resource Collector
+- Network Collector
+- Service Collector
+- Report Generator
