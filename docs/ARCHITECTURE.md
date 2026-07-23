@@ -24,6 +24,7 @@ Responsible for:
 - Local IP detection
 - Internet connectivity check
 - Linux service monitoring
+- Docker Monitoring
 ---
 
 Future Architecture
@@ -45,9 +46,10 @@ As the project grows, monitoring responsibilities will be separated into dedicat
 
 ### Planned Refactoring
 
-Upcoming versions will separate infrastructure collectors into dedicated modules:
+As the project grows, monitoring components will be separated into dedicated modules:
 
-- Resource Collector
+- System Collector
 - Network Collector
 - Service Collector
+- Docker Collector
 - Report Generator

@@ -38,6 +38,13 @@ The projects is being developed incrementally using Agile Sprints to simulate a 
 - PostgreSQL Service Status
 - Service Status Mapping (Running / Stopped / Failed / Not Installed)
 
+### Sprint 4
+
+- Docker Installation Detection
+- Docker Service Status
+- Running Containers Counter
+- Stopped Containers Counter
+
 ---
 
 ## 🛠️ Technologies
@@ -80,27 +87,31 @@ Infrastructure_Health-Checker/
 
 ![Sprint 3 Output](screenshots/Sprint_3.png)
 
+### Sprint 4
+
+![Sprint 4 Output](screenshots)
+
 ---
 
 ## 📌 Roadmap 
 
-### Sprint 4
+### Sprint 5
 
-- Docker Engine Detection 
-- Running Containers Count
-- Stopped Containers Count
+- Open Port Detection
+- Listening Ports Report
+- TCP Port Monitoring
 
 ### Future 
 
-- Open Port Detection
 - JSON Reports
 - HTML Dashboard
 - SSH Remote Monitoring
 - Multi-server Monitoring 
 - Health Score
+- Configuration File Support
 
 ---
 
 ## 📊 Current Version
 
-**v0.3.0**
+**v0.4.0**

@@ -38,7 +38,16 @@ All notable changes to this project will be documented in this file.
 - MySQL service status
 - PostgreSQL service status
 
+## v0.4.0
+
+### Added
+
+- Docker installation detection
+- Docker service monitoring
+- Running containers counter
+- Stopped containers counter
+
 ### Improved
 
-- Added service status mapping for readable output
-- Enhanced infrastructure monitoring capabilities
+- Expanded infrastructure monitoring to Docker environments
+- Improved monitoring coverage for DevOps use cases
