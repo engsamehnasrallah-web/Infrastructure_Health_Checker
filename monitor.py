@@ -60,7 +60,7 @@ def check_services(services):
             status = STATUS_MAP.get(status, status)
             print(f"{service:<22}: {status}")
         except Exception as e:
-            print(f"Error checking {service}: {e}")
+            print(f"Error checking {service}: {e}\n")
 
 def check_docker_service():
     """
@@ -91,7 +91,7 @@ def check_docker_service():
 
     running_containers = []
     try:
-        result = subprocess.run(["docker", "ps", "-q"], capture_output=True, text=True, check=True)
+        result = subprocess.run(["sudo", "docker", "ps", "-q"], capture_output=True, text=True, check=True)
         running_containers = result.stdout.strip().splitlines()
         num_running_containers = len(running_containers)
         print(f"Number of running containers        : {num_running_containers}")
@@ -99,10 +99,10 @@ def check_docker_service():
         print(f"Error checking running Docker containers: {e}")
 
     try:
-        result = subprocess.run(["docker", "ps", "-a", "-q"], capture_output=True, text=True, check=True)
+        result = subprocess.run(["sudo", "docker", "ps", "-a", "-q"], capture_output=True, text=True, check=True)
         all_containers = result.stdout.strip().splitlines()
         stopped_containers = [c for c in all_containers if c not in running_containers]
         num_stopped_containers = len(stopped_containers)
         print(f"Number of stopped containers        : {num_stopped_containers}")
     except Exception as e:
-        print(f"Error checking stopped Docker containers: {e}")
+        print(f"Error checking stopped Docker containers: {e}\n")
