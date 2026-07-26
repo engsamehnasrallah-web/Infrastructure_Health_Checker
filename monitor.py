@@ -60,7 +60,7 @@ def check_services(services):
             status = STATUS_MAP.get(status, status)
             print(f"{service:<22}: {status}")
         except Exception as e:
-            print(f"Error checking {service}: {e}")
+            print(f"Error checking {service}: {e}\n")
 
 def check_docker_service():
     """
@@ -91,7 +91,11 @@ def check_docker_service():
 
     running_containers = []
     try:
+<<<<<<< HEAD
         result = subprocess.run(["sudo" ,"docker", "ps", "-q"], capture_output=True, text=True, check=True)
+=======
+        result = subprocess.run(["sudo", "docker", "ps", "-q"], capture_output=True, text=True, check=True)
+>>>>>>> 696c03f63106449dcd204a382f562c13b3d3c2bd
         running_containers = result.stdout.strip().splitlines()
         num_running_containers = len(running_containers)
         print(f"Number of running containers        : {num_running_containers}")
@@ -105,6 +109,7 @@ def check_docker_service():
         num_stopped_containers = len(stopped_containers)
         print(f"Number of stopped containers        : {num_stopped_containers}")
     except Exception as e:
+<<<<<<< HEAD
         print(f"Error checking stopped Docker containers: {e}")
 
 # make output : port       service         status
@@ -146,3 +151,6 @@ def check_listening_ports():
             print("No TCP listening ports found.")
     except Exception as e:
         print(f"Error checking TCP listening ports  : {e}\n")
+=======
+        print(f"Error checking stopped Docker containers: {e}\n")
+>>>>>>> 696c03f63106449dcd204a382f562c13b3d3c2bd
