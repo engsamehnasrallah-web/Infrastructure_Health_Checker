@@ -51,3 +51,18 @@ All notable changes to this project will be documented in this file.
 
 - Expanded infrastructure monitoring to Docker environments
 - Improved monitoring coverage for DevOps use cases
+
+## v0.5.0
+
+### Added
+
+- TCP listening ports detection
+- Common service mapping
+- Professional ports report
+- Duplicate port filtering
+- Sorted port display
+
+### Improved
+
+- Enhanced network visibility
+- Better infrastructure monitoring output

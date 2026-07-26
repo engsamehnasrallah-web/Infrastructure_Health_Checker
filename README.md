@@ -45,6 +45,14 @@ The projects is being developed incrementally using Agile Sprints to simulate a 
 - Running Containers Counter
 - Stopped Containers Counter
 
+### Sprint 5
+
+- TCP Listening Ports Detection
+- Common Service Mapping 
+- Professional Ports Report
+- Duplicate Port Filtering
+- Sorted Port Display 
+
 ---
 
 ## 🛠️ Technologies
@@ -92,15 +100,19 @@ Infrastructure_Health-Checker/
 ![Sprint 4 Output : No Docker Installed Scienario](screenshots/Sprint_4_NoDock.png)
 ![Sprint 4 Output : Docker Installed Scienario](screenshots/Sprint_4_Runn.png)
 
+### Sprint 5
+
+![Sprint 5 Output](screenshots/Sprint_5.png)
+
 ---
 
 ## 📌 Roadmap 
 
-### Sprint 5
+### Sprint 6
 
-- Open Port Detection
-- Listening Ports Report
-- TCP Port Monitoring
+- Process Name Detection
+- PID Display
+- Port Owner Information
 
 ### Future 
 
@@ -115,4 +127,4 @@ Infrastructure_Health-Checker/
 
 ## 📊 Current Version
 
-**v0.4.0**
+**v0.5.0**

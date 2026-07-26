@@ -24,7 +24,8 @@ Responsible for:
 - Local IP detection
 - Internet connectivity check
 - Linux service monitoring
-- Docker Monitoring
+- Docker monitoring
+- TCP listening ports monitoring
 ---
 
 Future Architecture
