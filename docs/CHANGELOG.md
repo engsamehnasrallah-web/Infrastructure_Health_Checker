@@ -87,3 +87,25 @@ All notable changes to this project will be documented in this file.
 - Better system information coverage
 - Improved monitoring output formatting
 - Cleaner code structure
+
+## v0.7.0
+
+### Added
+
+- Modular project architecture
+- Collectors package
+- CPU collector
+- Network collector
+- Services collector
+- Docker collector
+- System collector
+
+### Changed
+
+- Moved monitoring logic into dedicated modules
+- Improved project maintainability
+- Simplified application entry point
+
+### Removed
+
+- Legacy monitor.py module

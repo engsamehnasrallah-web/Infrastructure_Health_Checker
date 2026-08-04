@@ -11,49 +11,58 @@ monitor.py
 
 ## Current Responsibilities
 
-### **main.py** 
-- Application entry point
+### **main.py**
 
-### **monitor.py**
+Responsible for:
+
+- Application entry point
+- Execute collectors
+
+### **collectors/system.py**
+
+Responsible for:
+
+- Hostname detection
+- Local IP detection
+- Internet connectivity
+- Operating system information
+
+### **collectors/cpu.py**
+
 Responsible for:
 
 - CPU monitoring
-- CPU details
-- Memory monitoring
-- Disk monitoring
-- Hostname detection
-- Local IP detection
-- Internet connectivity check
-- Linux service monitoring
+- CPU information
+- Per-core statistics
+
+### **collectors/network.py**
+
+Responsible for:
+
+- Network interfaces
+- TCP listening ports
+
+### **collectors/services.py**
+
+Responsible for:
+
+- Linux services monitoring
+
+### **collectors/docker.py**
+
+Responsible for:
+
 - Docker monitoring
-- TCP listening ports monitoring
-- Operating System monitoring
-- Network interfaces monitoring
 ---
-
-Future Architecture
-
-```
-main.py
-│
-├── collectors/
-├── models/
-├── reporters/
-└── config/
-```
-
-the architecture will envolve as new monitoring modules are introduced.
 
 ### Next Refactoring Goal
 
-As the project grows, monitoring responsibilities will be separated into dedicated collector modules to improve maintainability.
+Improve code reusability by introducing shared utility modules and centralized configuration management.
 
 ### Planned Refactoring
 
-As the project grows, monitoring components will be separated into dedicated modules:
-
-- System Collector
-- Network Collector
-- Service Collector
-- Docker Collector
+- Shared Utilities Module
+- Configuration Manager
 - Report Generator
+- HTML Reporter
+- JSON Reporter

@@ -66,6 +66,18 @@ The projects is being developed incrementally using Agile Sprints to simulate a 
 - Port Owner Information
 - Reusable Header Function
 
+### Sprint 7
+
+- Modular Project Architecture
+- Collectors Package
+- CPU Collector
+- Network Collector
+- Services Collector
+- Docker Collector
+- System Collector
+- Refactored Monitoring Modules
+- Removed Legacy monitor.py
+
 ---
 
 ## 🛠️ Technologies
@@ -121,16 +133,19 @@ Infrastructure_Health-Checker/
 
 ![Sprint 6 Output](screenshots/Sprint_6.png)
 
+### Sprint 7 (Architecture)
+![Sprint 7 Architecture](screenshots/Sprint_7.png)
+
 ---
 
 ## 📌 Roadmap 
 
-### Sprint 7
+### Sprint 8
 
-- Memory Details
-- Memory Usage Breakdown
-- Available & Used Memory
-- Swap Memory Information
+- Shared Utilities Module
+- Configuration File Support
+- Centralized Constants
+- Cleaner Imports
 
 ### Future
 
@@ -139,10 +154,9 @@ Infrastructure_Health-Checker/
 - SSH Remote Monitoring
 - Multi-server Monitoring
 - Health Score
-- Configuration File Support
 
 ---
 
 ## 📊 Current Version
 
-**v0.6.0**
+**v0.7.0**
