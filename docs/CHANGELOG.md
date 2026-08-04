@@ -66,3 +66,24 @@ All notable changes to this project will be documented in this file.
 
 - Enhanced network visibility
 - Better infrastructure monitoring output
+
+## v0.6.0
+
+### Added
+
+- CPU details section
+- Logical & physical CPU detection
+- Per-core CPU usage
+- CPU frequency information
+- Operating System details
+- System boot time
+- Network interface details
+- Process name detection
+- Port owner information
+- Reusable header function
+
+### Improved
+
+- Better system information coverage
+- Improved monitoring output formatting
+- Cleaner code structure

@@ -18,6 +18,7 @@ monitor.py
 Responsible for:
 
 - CPU monitoring
+- CPU details
 - Memory monitoring
 - Disk monitoring
 - Hostname detection
@@ -26,6 +27,8 @@ Responsible for:
 - Linux service monitoring
 - Docker monitoring
 - TCP listening ports monitoring
+- Operating System monitoring
+- Network interfaces monitoring
 ---
 
 Future Architecture

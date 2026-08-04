@@ -53,6 +53,19 @@ The projects is being developed incrementally using Agile Sprints to simulate a 
 - Duplicate Port Filtering
 - Sorted Port Display 
 
+### Sprint 6
+
+- CPU Details
+- Logical & Physical CPU Detection
+- Per-Core CPU Usage
+- CPU Frequency Information
+- Operating System Details
+- System Boot Time
+- Network Interface Details
+- Process Name Detection
+- Port Owner Information
+- Reusable Header Function
+
 ---
 
 ## 🛠️ Technologies
@@ -104,22 +117,27 @@ Infrastructure_Health-Checker/
 
 ![Sprint 5 Output](screenshots/Sprint_5.png)
 
+### Sprint 6
+
+![Sprint 6 Output](screenshots/Sprint_6.png)
+
 ---
 
 ## 📌 Roadmap 
 
-### Sprint 6
+### Sprint 7
 
-- Process Name Detection
-- PID Display
-- Port Owner Information
+- Memory Details
+- Memory Usage Breakdown
+- Available & Used Memory
+- Swap Memory Information
 
-### Future 
+### Future
 
 - JSON Reports
 - HTML Dashboard
 - SSH Remote Monitoring
-- Multi-server Monitoring 
+- Multi-server Monitoring
 - Health Score
 - Configuration File Support
 
@@ -127,4 +145,4 @@ Infrastructure_Health-Checker/
 
 ## 📊 Current Version
 
-**v0.5.0**
+**v0.6.0**
