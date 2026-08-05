@@ -3,7 +3,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# Virtual Environment
+# Virtual Environments
 .venv/
 venv/
 env/
@@ -14,13 +14,13 @@ env/
 # VS Code
 .vscode/
 
-# OS Files
-.DS_Store
-Thumbs.db
-
-# Coverage
+# Coverage Reports
 .coverage
 htmlcov/
 
 # Logs
 *.log
+
+# OS Files
+.DS_Store
+Thumbs.db
