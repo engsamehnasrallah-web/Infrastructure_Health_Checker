@@ -109,3 +109,21 @@ All notable changes to this project will be documented in this file.
 ### Removed
 
 - Legacy monitor.py module
+
+## v0.8.0
+
+### Added
+
+- Configuration file support
+- JSON configuration loader
+- Shared helper utilities
+- Centralized constants module
+- Configuration validation
+- Default configuration handling
+
+### Improved
+
+- Better project organization
+- Cleaner configuration management
+- Reduced code duplication
+- Improved maintainability

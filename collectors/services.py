@@ -1,12 +1,6 @@
-from collectors.system import print_header
+from utils.helpers import print_header
+from config.constants import STATUS_MAP
 import subprocess
-
-STATUS_MAP = {
-                "active": "Running ✅",
-                "inactive": "Stopped ❌",
-                "failed": "Failed ❌",
-                "unknown": "Not Installed ⚠️"
-            }
 
 def check_services(services):
     """

@@ -78,6 +78,15 @@ The projects is being developed incrementally using Agile Sprints to simulate a 
 - Refactored Monitoring Modules
 - Removed Legacy monitor.py
 
+### Sprint 8
+
+- Configuration File Support
+- JSON Config Loader
+- Centralized Constants
+- Shared Helper Functions
+- Configuration Validation
+- Default Configuration Handling
+
 ---
 
 ## 🛠️ Technologies
@@ -136,27 +145,29 @@ Infrastructure_Health-Checker/
 ### Sprint 7 (Architecture)
 ![Sprint 7 Architecture](screenshots/Sprint_7.png)
 
+### Sprint 8 (Config Files Setup)
+![Sprint 8 Files](screenshots/Sprint_8.png)
+
 ---
 
-## 📌 Roadmap 
+## 📌 Roadmap
 
-### Sprint 8
+### Sprint 9
 
-- Shared Utilities Module
-- Configuration File Support
-- Centralized Constants
-- Cleaner Imports
+- JSON Report Generator
+- Report Model
+- Export Monitoring Results
 
 ### Future
 
-- JSON Reports
 - HTML Dashboard
-- SSH Remote Monitoring
-- Multi-server Monitoring
 - Health Score
+- Multi-server Monitoring
+- SSH Remote Monitoring
+- Email Notifications
 
 ---
 
 ## 📊 Current Version
 
-**v0.7.0**
+**v0.8.0**

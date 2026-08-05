@@ -1,5 +1,5 @@
-from collectors.system import print_header
-from collectors.service import STATUS_MAP
+from utils.helpers import print_header
+from config.constants import STATUS_MAP
 import subprocess
 
 def check_docker_service():

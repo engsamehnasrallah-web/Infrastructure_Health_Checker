@@ -1,3 +1,4 @@
+from config.config import load_config
 from collectors.services import check_services
 from collectors.docker import check_docker_service
 from collectors.cpu import check_cpu_details
@@ -10,7 +11,8 @@ from collectors.network import(
     check_network_interfaces,
 )
 
-services = ["ssh", "apache2", "nginx", "mysql", "postgresql"]
+config = load_config()
+services = config["services"]
 
 system_monitor()
 check_services(services)

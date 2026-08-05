@@ -1,4 +1,26 @@
+# Python
 __pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# Pytest
 .pytest_cache/
-.vscode
-test_monitor.py
+
+# VS Code
+.vscode/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Coverage
+.coverage
+htmlcov/
+
+# Logs
+*.log

@@ -1,14 +1,11 @@
-from collectors.system import print_header
-import datetime
+from utils.helpers import print_header
+from datetime import datetime
+from config.config import load_config
 import platform
 import socket
 import psutil
-from datetime import datetime
 
-def print_header(title):
-    print("=" * 30)
-    print(title)
-    print("=" * 30 + "\n")
+config = load_config()
 
 def system_monitor():
     """
@@ -16,19 +13,30 @@ def system_monitor():
     """
 
     print_header("Infrastructure Health Checker")
-    print("Version: v0.5.0\n")
+    print("Version: v0.7.0\n")
 
     hostname = platform.node()
     print(f"Hostname               : {hostname}")
 
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    sock.connect(("8.8.8.8", 80))
+    sock.connect(
+        (
+            config["internet_check"]["host"],
+            80,
+        )
+    )
     local_ip = sock.getsockname()[0]
     sock.close()
     print(f"Local IP Address       : {local_ip}")
 
     try:
-        socket.create_connection(("8.8.8.8", 53), timeout=3)
+        socket.create_connection(
+            (
+                config["internet_check"]["host"],
+                config["internet_check"]["port"]
+            ),
+            timeout=config["internet_check"]["timeout"]
+        )
         internet_connectivity = "Online"
     except OSError:
         internet_connectivity = "Offline"

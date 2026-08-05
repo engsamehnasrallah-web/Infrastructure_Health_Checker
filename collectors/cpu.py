@@ -1,4 +1,4 @@
-from collectors.system import print_header
+from utils.helpers import print_header
 import psutil
 import platform
 

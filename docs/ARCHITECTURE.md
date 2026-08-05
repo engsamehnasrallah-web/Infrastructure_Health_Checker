@@ -13,56 +13,50 @@ monitor.py
 
 ### **main.py**
 
-Responsible for:
-
 - Application entry point
-- Execute collectors
+- Configuration loading
+- Collector orchestration
 
-### **collectors/system.py**
-
-Responsible for:
-
-- Hostname detection
-- Local IP detection
-- Internet connectivity
-- Operating system information
-
-### **collectors/cpu.py**
+### **collectors/**
 
 Responsible for:
 
 - CPU monitoring
-- CPU information
-- Per-core statistics
-
-### **collectors/network.py**
-
-Responsible for:
-
-- Network interfaces
-- TCP listening ports
-
-### **collectors/services.py**
-
-Responsible for:
-
-- Linux services monitoring
-
-### **collectors/docker.py**
-
-Responsible for:
-
+- Memory monitoring
+- Disk monitoring
+- Hostname detection
+- Local IP detection
+- Internet connectivity check
+- Linux service monitoring
 - Docker monitoring
+- TCP listening ports monitoring
+- Operating system monitoring
+- Network interface monitoring
+
+### **config/**
+
+Responsible for:
+
+- Configuration loading
+- Centralized constants
+- Application settings
+
+### **utils/**
+
+Responsible for:
+
+- Shared helper functions
+- Common console formatting
+
 ---
 
 ### Next Refactoring Goal
 
-Improve code reusability by introducing shared utility modules and centralized configuration management.
+Introduce Report models and Reporter modules for exporting monitoring results.
 
 ### Planned Refactoring
 
-- Shared Utilities Module
-- Configuration Manager
-- Report Generator
-- HTML Reporter
+- Report Model
 - JSON Reporter
+- HTML Reporter
+- Health Score Engine
